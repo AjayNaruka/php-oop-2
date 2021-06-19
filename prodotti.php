@@ -61,7 +61,7 @@ require_once __DIR__ . "/functions.php";
       </p>
       <div class="group-container clothing">
         <?php foreach ($abbigliamenti as $abbigliamento) { ?>
-          <div class="carta card_user">
+          <div class="carta card_premium">
             <div class="immagine prod">
               <img src="<?php echo getRandom($possible_clothing_images) ?>" alt="">
             </div>
@@ -85,7 +85,7 @@ require_once __DIR__ . "/functions.php";
       </p>
       <div class="group-container food">
         <?php foreach ($alimenti as $alimento) { ?>
-          <div class="carta card_user">
+          <div class="carta card_premium">
             <div class="immagine prod">
               <img src="<?php echo getRandom($possible_food_images) ?>" alt="">
             </div>
@@ -102,8 +102,11 @@ require_once __DIR__ . "/functions.php";
         <?php } ?>
       </div>
     </section>
-
+    <h2>
+      <a href="index.php">> Torna alla pagina principale</a>
+    </h2>
   </main>
+  
 </body>
 
 </html>
