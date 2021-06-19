@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #EAEDED;
+}
+
+/* HEADER */
+header{
+  width: 100%;
+ /*  background-color: red; */
+}
+.header-container{
+  display: flex;
+  padding: 10px 20px;
+  /* align-items: center; */
+  justify-content: space-between;
+  background-color: #131921;
+}
+
+header img{
+  height: 50px;
+}
+header img.user{
+  background-color: white;
+  border-radius: 50%;
+
+}
+
+
+/* MAIN */
+main{
+  /* background-color: #EAEDED; */
+  width: 90%;
+  margin: 0 auto;
+}
+section{
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.group-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.carta{
+  flex-basis: 18%;
+  background-color: grey;
+  margin: 1%;
+  /* padding: 5px; */ 
+}
+.carta ul{
+  list-style: none;
+  padding-left: 0;
+}
+.errori{
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+img.card-logo{
+  height: 10px;
+}
+.cartascaduta{
+  border:5px solid red;
+}
+.carta.card_user{
+  position: relative;
+  /* min-height: 300px; */
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 5px;
+}
+
+.carta.card_user:hover .infos{
+  display: block;
+}
+.carta.card_user:hover .immagine img{
+  transform: scale(2,2);
+}
+.immagine{
+  width: 100%;
+  overflow: hidden;
+}
+.immagine img{
+  height: 100%;
+  width: 100%;
+  transition: all 1s;
+}
+.immagine.prod img{
+  height: 300px;
+  transition: all 1s;
+}
+.infos{
+display: none;
+position: absolute;
+top: 0;
+transition: all 1s linear;
+background-color: rgba(0, 0, 0, 1);
+width: 100%;
+color: white;
+height: 100%;
+padding: 5px 10px;
+
+}
+
+
+
+
+
